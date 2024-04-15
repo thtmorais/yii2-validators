@@ -1,0 +1,25 @@
+{
+    "name": "thtmorais/yii2-validators",
+    "description": "Validation suite for Yii PHP Framework 2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","validators", "xand-validator", "xand", "validator", "XAND"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/thtmorais/yii2-validators/issues",
+        "source": "https://github.com/thtmorais/yii2-validators"
+    },
+    "authors": [
+        {
+            "name": "Matheus Evangelista Morais",
+            "email": "thtmorais@hotmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "thtmorais\\validators\\": "src"
+        }
+    }
+}
