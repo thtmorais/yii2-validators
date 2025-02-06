@@ -18,4 +18,4 @@ It is strictly forbidden not to follow conventions and good practices in this pr
     
 ## Desenvolvedores
 
-### Matheus Evangelista Morais - [thtmorais](https://github.com/thtmorais)
+### Matheus Evangelista Morais - (GitLab: [thtmorais](https://gitlab.com/thtmorais) / GitHub: [thtmorais](https://github.com/thtmorais))
