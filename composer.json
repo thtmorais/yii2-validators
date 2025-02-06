@@ -2,7 +2,7 @@
     "name": "thtmorais/yii2-validators",
     "description": "Validation suite for Yii PHP Framework 2",
     "type": "yii2-extension",
-    "keywords": ["yii2","validators", "xand-validator", "xand", "validator", "XAND"],
+    "keywords": ["yii2", "yii2-extesions", "yii2-validators", "yii2-xand-validator", "xand-validator"],
     "license": "MIT",
     "support": {
         "issues": "https://github.com/thtmorais/yii2-validators/issues",
