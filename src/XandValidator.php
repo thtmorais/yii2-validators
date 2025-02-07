@@ -3,14 +3,12 @@
 namespace thtmorais\validators;
 
 use Yii;
-use yii\validators\Validator;
-use yii\i18n\PhpMessageSource;
 
 /**
  * Class XandValidator
  * @package thtmorais\validators
  */
-class XandValidator extends Validator
+class XandValidator extends \yii\validators\Validator
 {
     /**
      * @var array
@@ -24,11 +22,11 @@ class XandValidator extends Validator
     {
         parent::init();
 
-        Yii::setAlias('@thtmorais/yii2-validators', dirname(__DIR__));
+        Yii::setAlias('@validators', dirname(__DIR__));
 
-        Yii::$app->i18n->translations['thtmorais/yii2-validators'] = [
-            'class' => PhpMessageSource::class,
-            'basePath' => '@thtmorais/yii2-validators/src/messages'
+        Yii::$app->i18n->translations['validators'] = [
+            'class' => '\yii\i18n\PhpMessageSource',
+            'basePath' => '@validators/src/messages'
         ];
     }
 
@@ -50,10 +48,10 @@ class XandValidator extends Validator
         }));
 
         if ($filledCount != 0 && $filledCount != count($this->fields)) {
-            $this->addError($model, $attribute, Yii::t('thtmorais/yii2-validators', 'All or none of the specified fields must be filled.'));
+            $this->addError($model, $attribute, Yii::t('validators', 'All or none of the specified fields must be filled.'));
 
             foreach ($this->fields as $field) {
-                $this->addError($model, $field, Yii::t('thtmorais/yii2-validators', 'All or none of the specified fields must be filled.'));
+                $this->addError($model, $field, Yii::t('validators', 'All or none of the specified fields must be filled.'));
             }
         }
     }
